@@ -80,6 +80,8 @@ java.util.Timer是 JDK 1.3 开始就已经支持的一种定时任务的实现�
 4. 还实现了BeanNameAware接口用于回调bean名称；BeanFactoryAware接口用于回调bean工厂实例，具体是DefaultListableBeanFactory，也就是熟知的IOC容器；ApplicationContextAware接口用于回调ApplicationContext实例，即Spring上下文，同时是事件广播器、资源加载器的实现等等。
 5. 还实现了DisposableBean接口，当前Bean实例销毁时候回调，用于取消和清理所有的ScheduledTask。ScheduledAnnotationBeanPostProcessor#destroy
 
+注(Bean的一生)：
+![image](https://user-images.githubusercontent.com/41152743/140677509-dae16814-43f5-46d4-b522-9ec75fa7a442.png)
 
 
 
